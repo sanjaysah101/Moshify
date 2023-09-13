@@ -389,34 +389,51 @@ a {
   content: close-quote;
 }
 
-.quote__author{
-    font-size: 3rem;
-    font-weight: 500;
-    font-style: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*FIXME: add font family to Montserrat */
-    margin-bottom: 0;
+.quote__author {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*FIXME: add font family to Montserrat */
+  margin-bottom: 0;
 }
 
-.quote__organization{
+.quote__organization {
   color: var(--color-heading);
-  opacity: .4;
+  opacity: 0.4;
   font-size: 2rem;
   font-style: normal;
 }
 
-.quote__line{
+.quote__line {
   position: relative;
   bottom: 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  .quote{
+  .quote {
     font-size: 2rem;
   }
-  .quote__author{
+  .quote__author {
     font-size: 2.4rem;
   }
-  .quote__organization{
+  .quote__organization {
     font-size: 1.6rem;
+  }
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
