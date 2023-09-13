@@ -512,15 +512,48 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .callout .grid--1x2{
+  .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
 
-  .callout__content{
+  .callout__content {
     text-align: left;
   }
-  .callout .btn{
+  .callout .btn {
     justify-self: start;
     margin: 0 2rem;
   }
+}
+
+/* Collapsibles */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron{
+  transform: rotate(-90deg);
+  transition: transform .3s;
+}
+
+.collapsible__content{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height .3s, opacity .3s;
+}
+
+.collapsible--expanded .collapsible__chevron{
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content{
+  max-height: 100vh;
+  opacity: 1;
 }
