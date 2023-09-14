@@ -1,3 +1,5 @@
+@import url("./normalize.css");
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -205,14 +207,14 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   border: 0;
   border-radius: 40px;
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
   margin: 1rem 0;
-  /* outline: 0; */
+  outline: 0;
 }
 
 .btn .icon {
@@ -301,6 +303,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -755,8 +758,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -837,7 +841,7 @@ a {
   border-bottom: 2px solid #393939;
 }
 
-.footer__section .list{
+.footer__section .list {
   margin: 0;
 }
 
@@ -851,7 +855,7 @@ a {
   text-align: center;
 }
 
-.footer__brand img{
+.footer__brand img {
   width: 100%;
   max-width: 230px;
 }
@@ -862,12 +866,12 @@ a {
   opacity: 0.3;
 }
 
-.footer a{
+.footer a {
   color: #777;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: #fff;
 }
 
