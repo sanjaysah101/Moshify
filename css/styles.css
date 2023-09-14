@@ -22,7 +22,7 @@
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5;
-  }
+}
 
 h1,
 h2,
@@ -115,11 +115,11 @@ a {
 
 .badge--primary {
   background-color: var(--color-primary);
-  }
+}
 
 .badge--secondary {
   background-color: var(--color-secondary);
-  }
+}
 
 .badge--small {
   font-size: 1.6rem;
@@ -202,15 +202,15 @@ a {
 /* Buttons */
 
 .btn {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
   font-weight: 600;
-    text-transform: uppercase;
-padding: 2rem 3rem;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
   border: 0;
   border-radius: 40px;
   cursor: pointer;
   white-space: nowrap;
-text-align: center;
+  text-align: center;
   margin: 1rem 0;
   /* outline: 0; */
 }
@@ -750,9 +750,9 @@ text-align: center;
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
-max-width: 670px;
+  max-width: 670px;
   margin: 4rem auto;
-  }
+}
 
 .block-domain__prices {
   display: grid;
@@ -823,5 +823,82 @@ max-width: 670px;
   .block-showcase__image > img {
     width: auto;
     max-width: 700px;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: #232323;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 2px solid #393939;
+}
+
+.footer__section .list{
+  margin: 0;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__brand img{
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.footer a{
+  color: #777;
+  transition: color .3s;
+}
+
+.footer a:hover{
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__section {
+    border: 0;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
   }
 }
